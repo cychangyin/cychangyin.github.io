@@ -91,7 +91,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>你好，欢迎来到我的个人技术博客！</p>
-
+      <h3>解决matplotlib显示中文问题</h3>
+      <ul>
+        <li>plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']  # 指定默认字体</li>
+        <li>plt.rcParams['axes.unicode_minus'] = False  # 解决保存图像是负号'-'显示为方块的问题</li>
+      </ul>
       
     </div>
     <footer class="article-footer">
