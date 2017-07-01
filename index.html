@@ -93,8 +93,14 @@
         <p>你好，欢迎来到我的个人技术博客！</p>
       <h3>解决matplotlib显示中文问题</h3>
       <ul>
+        <li>import matplotlib.pyplot as plt</li>
         <li>plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']  # 指定默认字体</li>
         <li>plt.rcParams['axes.unicode_minus'] = False  # 解决保存图像是负号'-'显示为方块的问题</li>
+        <p>上面的操作做完之后需要把微软雅黑字体msyh.ttf放到ubuntu里你的matplotlib所在的对应字体配置下:</p>
+        <p>比如我的路径是~/anaconda3/pkgs/matplotlib-2.0.2-np112py36_0/lib/python3.6/site-packages/matplotlib/mpl-data/fonts/ttf/</p>
+        <p>修改字体的配置文件以我自己的为例~/anaconda3/pkgs/matplotlib-2.0.2-np112py36_0/lib/python3.6/site-packages/matplotlib/mpl-data/matplotlibrc</p>
+        <p>要修改的地方就2个：font.family : sans-serif  注释打开；  font.sans-serif : <b>Microsoft YaHei</b>,DejaVu Sans, Bitstream Vera Sans, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde,sans-serif
+</p>
       </ul>
       
     </div>
